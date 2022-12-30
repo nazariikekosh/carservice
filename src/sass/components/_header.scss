@@ -1,4 +1,43 @@
 .header{
    font-family: 'Poppins', sans-serif;
    background-color: black;
+   &__logo{
+      margin-top: 20px;
+   }
+   &__nav{
+      margin: 0 auto;
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            list-style: none;
+            margin-right: 35px;
+            :hover{
+               color: red;
+            }
+            a{
+               white-space: nowrap;
+               text-decoration: none;
+               color: #FFFFFF;
+               font-family: 'Poppins';
+               font-style: normal;
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+      }
+   }
+   &__lang{
+
+      a{
+         margin-left: 8px;
+         text-decoration: none;
+         color: #FFFFFF;
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 15px;
+      }
+      
+   }
 }
