@@ -3,17 +3,24 @@
    background-color: black;
    &__logo{
       margin-top: 20px;
+      margin-bottom: 14px;
    }
    &__nav{
       margin: 0 auto;
       ul{
          display: flex;
          align-items: center;
+         justify-content: center;
+         justify-content: center;
+         :last-child{
+            margin-right: 0;
+         }
          li{
             list-style: none;
             margin-right: 35px;
             :hover{
                color: red;
+               transition: 1.5s;
             }
             a{
                white-space: nowrap;
@@ -23,12 +30,21 @@
                font-style: normal;
                font-weight: 600;
                font-size: 15px;
+
             }
          }
       }
    }
    &__lang{
-
+      display: flex;
+      justify-content: flex-end;
+      :hover{
+         color: red;
+         transition: 1.5s;
+      }
+      :first-child{
+         margin-left: 0;
+      }
       a{
          margin-left: 8px;
          text-decoration: none;
