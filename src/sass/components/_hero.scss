@@ -9,6 +9,7 @@
 
    &__title {
       margin-top: 200px;
+      margin-bottom: 52px;
 
       h1 {
          font-family: 'Poppins';
@@ -24,7 +25,6 @@
       display: inline-flex;
       background-color: red;
       cursor: pointer;
-      margin-top: 52px;
       :hover {
          box-shadow: 4px 4px 8px white;
          text-shadow: 8px 8px 16px rgb(19, 18, 18);
