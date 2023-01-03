@@ -1,5 +1,5 @@
 .info{
-      
+      transform: translateY(-50%);
    &__item{
       background-color: white;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
@@ -15,12 +15,20 @@
          font-weight: 700;
          font-size: 18px;
          line-height: 1.5;
+         letter-spacing: 0.15em;
          color: #000000;
       }
       &_subtitle{
          padding-left: 39px;
          padding-top: 15px;
          padding-bottom: 37px;
+         color: #B7B7B7;
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 1.5;
+
       }
    }
 }
