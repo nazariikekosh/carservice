@@ -76,17 +76,19 @@
          }
          
          &-img{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            a{
+               width: 100px;
+               height: 100px;
+               background-color: red;
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+            }
 
          }
          &-text{
@@ -109,7 +111,7 @@
       &_title {
          margin-top: 21px;
 
-         p {
+         a {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
@@ -117,6 +119,7 @@
             line-height: 1.5;
             letter-spacing: 0.23em;
             color: #000000;
+            text-decoration: none;
          }
       }
       
