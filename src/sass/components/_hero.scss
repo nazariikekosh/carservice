@@ -6,6 +6,7 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+
    &__title {
 
       margin-top: 200px;
@@ -26,11 +27,12 @@
       display: inline-flex;
       background-color: red;
       cursor: pointer;
+
       :hover {
          box-shadow: 4px 4px 8px white;
          text-shadow: 8px 8px 16px rgb(19, 18, 18);
          transition: 1.5s;
-   }
+      }
 
       a {
          padding: 12px 48px;
@@ -40,6 +42,6 @@
          font-size: 18px;
          color: #FFFFFF;
          text-decoration: none;
-         }
       }
+   }
 }

@@ -1,0 +1,35 @@
+.ourservices {
+   margin-bottom: 100px;
+
+   &__title {
+      h2 {
+         margin-bottom: 15px;
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 30px;
+         line-height: 1.5;
+         letter-spacing: 0.15em;
+         color: #000000;
+      }
+   }
+
+   &__subtitle {
+      :hover{
+         color: red;
+         transition: 1.5s;
+      }
+      a {
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 1.2px;
+         letter-spacing: 0.15em;
+         color: #000000;
+         text-decoration-line: underline;
+         
+      }
+   }
+
+}
