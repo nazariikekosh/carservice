@@ -110,6 +110,10 @@
 
       &_title {
          margin-top: 21px;
+         :hover{
+            color: red;
+            transition: 1.5s;
+         }
 
          a {
             font-family: 'Poppins';
