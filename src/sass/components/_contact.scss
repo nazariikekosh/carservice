@@ -14,14 +14,46 @@
       
    }
    &__form{
-
+      max-width: 440px;
       &_row{
-         display: flex;
          margin: 0 -20px;
-         &-group{
+         display: flex;
+
+         &_group{
+            margin-bottom: 30px;
             padding: 0 20px;
             flex: 1;
+            position: relative;
+            input{
+               width: 100%;
+               padding: 10px 0;
+               color: #fff;
+               font-size: 15px;
+               font-family: inherit;
+               outline: 0;
+               border: 0;
+               border-bottom: 1px solid #fff;
+               background-color: transparent;
+            }
+            label{
+               letter-spacing: 0.15em;
+               color: #FFFFFF;
+               position: absolute;
+               top: 10px;
+               left: 20px;
+               pointer-events: none;
+               transition: all .2s ease;
+            }
+
          }
       }
+   }
+   .input:focus + .label {
+      transform: translateY(-20px);
+      font-size: 12px;
+   }
+   .input:not(:placeholder-shown) + .label{
+      transform: translateY(-20px);
+      font-size: 12px;
    }
 }
