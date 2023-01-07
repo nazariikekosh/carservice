@@ -14,6 +14,20 @@
       
    }
    &__form{
+
+      button{
+         background-color: red;
+         color: #FFFFFF;
+         padding: 11px 75px;
+         border: none;
+         transition: 1.5s;
+         &:hover {
+            box-shadow: 4px 4px 8px white;
+            text-shadow: 8px 8px 16px rgb(19, 18, 18);
+
+            background-color: red;
+         }
+      }
       max-width: 440px;
       &_row{
          margin: 0 -20px;
@@ -46,7 +60,9 @@
             }
             textarea{
                width: 100%;
+               min-height: 130px;
                padding: 10px 0;
+               resize: vertical;
                color: #fff;
                font-size: 15px;
                font-family: inherit;
@@ -55,15 +71,24 @@
                border-bottom: 1px solid #fff;
                background-color: transparent;
             }
-
+         
          }
       }
+      
    }
    .input:focus + .label {
       transform: translateY(-20px);
       font-size: 12px;
    }
    .input:not(:placeholder-shown) + .label{
+      transform: translateY(-20px);
+      font-size: 12px;
+   }
+   .textarea:focus + .label {
+      transform: translateY(-20px);
+      font-size: 12px;
+   }
+   .textarea:not(:placeholder-shown) + .label{
       transform: translateY(-20px);
       font-size: 12px;
    }
