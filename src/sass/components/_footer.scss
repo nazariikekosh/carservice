@@ -1,4 +1,27 @@
-// .footer{
-//     background-color: black;
-//     color: #fff;
-// }
+.footer{
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    &__copyright{
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.5;
+            letter-spacing: 0.15em;
+            color: #000000;
+        }
+    }
+    &__social{
+
+        a{
+            margin-left: 25px;
+            text-decoration: none;
+            :hover{
+                transform: scale(1.2);
+                transition: 1.5s;
+            }
+        }
+    }
+}

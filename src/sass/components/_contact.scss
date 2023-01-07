@@ -21,6 +21,8 @@
          padding: 11px 75px;
          border: none;
          transition: 1.5s;
+         outline: 0;
+         border: 0;
          &:hover {
             box-shadow: 4px 4px 8px white;
             text-shadow: 8px 8px 16px rgb(19, 18, 18);
@@ -59,6 +61,7 @@
                transition: all .2s ease;
             }
             textarea{
+               margin-bottom: 37px;
                width: 100%;
                min-height: 130px;
                padding: 10px 0;
