@@ -14,7 +14,8 @@
         }
     }
     &__social{
-
+        display: flex;
+        justify-content: flex-end;
         a{
             margin-left: 25px;
             text-decoration: none;
