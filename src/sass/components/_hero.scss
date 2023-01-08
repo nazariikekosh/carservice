@@ -18,6 +18,9 @@
          font-size: 48px;
          line-height: 1.2;
          color: #FFFFFF;
+         @media screen and (max-width:1200px) {
+            font-size: 45px;
+         }
       }
    }
 

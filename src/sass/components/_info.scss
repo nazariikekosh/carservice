@@ -19,7 +19,11 @@
          font-size: 18px;
          line-height: 1.5;
          letter-spacing: 0.15em;
+         white-space: nowrap;
          color: #000000;
+         @media screen and (max-width:1200px) {
+            font-size: 16px;
+         }
       }
 
       &_subtitle {
@@ -32,6 +36,9 @@
          font-weight: 400;
          font-size: 18px;
          line-height: 1.5;
+         @media screen and (max-width:1200px) {
+            font-size: 14px;
+         }
 
       }
    }

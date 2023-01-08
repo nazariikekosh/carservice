@@ -12,6 +12,9 @@
          letter-spacing: 0.15em;
          text-transform: uppercase;
          color: #FFFFFF;
+         @media screen and (max-width:1200px) {
+            font-size: 28px;
+         }
       }
    }
    &__text{
@@ -46,7 +49,9 @@
    &__image{
       img{
          max-height: 513px;
-         
+         @media screen and (max-width:1200px) {
+            max-height: 300px;
+         }
       }
    }
 
