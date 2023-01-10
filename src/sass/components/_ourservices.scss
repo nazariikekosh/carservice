@@ -3,6 +3,7 @@
 
    &__title {
       h2 {
+         white-space: nowrap;
          margin-bottom: 15px;
          font-family: 'Poppins';
          font-style: normal;
@@ -15,6 +16,7 @@
    }
 
    &__subtitle {
+      white-space: nowrap;
       margin-bottom: 60px;
 
       :hover {
