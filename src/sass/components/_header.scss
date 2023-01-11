@@ -59,6 +59,9 @@
                   font-size: 15px;
                }
             }
+            @media screen and (max-width: 765px) {
+               display: none;
+            }
          }
       }
 
