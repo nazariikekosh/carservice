@@ -5,6 +5,9 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   @media screen and (max-width: 991px) {
+      max-height: 600px;
+   }
 
    &__title {
 
@@ -23,6 +26,7 @@
          }
          @media screen and (max-width: 991px) {
             font-size: 35px;
+            text-align: center;
          }
       }
    }
@@ -32,6 +36,7 @@
       display: inline-flex;
       background-color: red;
       cursor: pointer;
+      
 
       :hover {
          box-shadow: 4px 4px 8px white;
@@ -48,6 +53,9 @@
          font-size: 18px;
          color: #FFFFFF;
          text-decoration: none;
+         @media screen and (max-width: 992px) {
+         padding: 10px 30px;
+         }
       }
    }
 }
