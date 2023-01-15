@@ -1,31 +1,36 @@
-.fast{
+.fast {
    font-family: 'Poppins';
    padding-bottom: 100px;
 
-   &__title{
-      h4{
-      margin-top: 100px;
-      margin-bottom: 58px;
-      text-align: center;
-      font-style: normal;
-      font-size: 148px;
-      line-height: 1.5;
-      text-transform: uppercase;
-      color: #000000;
-      @media screen and (max-width:1200px) {
-         font-size: 120px;
-      }
-      @media screen and (max-width: 992px) {
-         font-size: 90px;
-      }
-      @media screen and (max-width: 765px) {
-         font-size: 70px;
-      }
+   &__title {
+      h4 {
+         margin-top: 100px;
+         margin-bottom: 58px;
+         text-align: center;
+         font-style: normal;
+         font-size: 148px;
+         line-height: 1.5;
+         text-transform: uppercase;
+         color: #000000;
+
+         @media screen and (max-width:1200px) {
+            font-size: 120px;
+         }
+
+         @media screen and (max-width: 992px) {
+            font-size: 90px;
+         }
+
+         @media screen and (max-width: 765px) {
+            font-size: 70px;
+         }
       }
    }
-   &__subtitle{
+
+   &__subtitle {
       margin-bottom: 98px;
-      p{
+
+      p {
          text-align: center;
          font-style: normal;
          font-weight: 600;
@@ -34,35 +39,55 @@
          letter-spacing: 0.15em;
          text-transform: uppercase;
          color: #000000;
+
          @media screen and (max-width: 765px) {
             font-size: 30px;
          }
       }
    }
-   &__info{
-      background: #FFFFFF;
-      height: 100%;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-      &_title{
-         padding-top: 30px;
-         padding-left: 30px;
-         padding-bottom: 15px;
-         h5{
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.5;
-         }
+
+   &__column {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+
+      @media screen and (max-width: 920px) {
+         grid-template-columns: auto auto;
       }
-      &_text{
-         padding-left: 30px;
-         padding-bottom: 26px;
-         p{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.5;
-            color: #B7B7B7;
+
+      @media screen and (max-width: 768px) {
+         grid-template-columns: auto;
+      }
+
+      .fast__info {
+         background: #FFFFFF;
+         height: 100%;
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+         &_title {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 15px;
+
+            h5 {
+               font-style: normal;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 1.5;
+            }
+         }
+
+         &_text {
+            padding-left: 30px;
+            padding-bottom: 26px;
+
+            p {
+               font-style: normal;
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 1.5;
+               color: #B7B7B7;
+            }
          }
       }
    }
