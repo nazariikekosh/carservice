@@ -12,12 +12,22 @@
          line-height: 1.5;
          letter-spacing: 0.15em;
          color: #000000;
+
+         @media screen and(max-width: 575px) {
+            display: flex;
+            justify-content: center;
+         }
       }
    }
 
    &__subtitle {
       white-space: nowrap;
       margin-bottom: 60px;
+
+      @media screen and(max-width: 575px) {
+         display: flex;
+         justify-content: center;
+      }
 
       :hover {
          color: red;
@@ -39,14 +49,16 @@
    }
 
    &__item {
-      &:hover{
-         .ourservices__item_content-block{
-            opacity: 1; 
+      &:hover {
+         .ourservices__item_content-block {
+            opacity: 1;
          }
-         .ourservices__item_content::after{
+
+         .ourservices__item_content::after {
             opacity: 0.7;
          }
       }
+
       &_content {
          background-position: center;
          background-repeat: no-repeat;
@@ -55,13 +67,20 @@
          height: 100vh;
          max-height: 500px;
          position: relative;
+
          @media screen and (max-width: 992px) {
             max-height: 300px;
          }
+
          @media screen and (max-width: 760px) {
             max-height: 200px;
          }
-         &::after{
+         @media screen and (max-width: 575px) {
+            background-size: contain;
+            max-height: 250px;
+         }
+
+         &::after {
             width: 100%;
             height: 100%;
             background-color: #000000;
@@ -72,7 +91,8 @@
             content: '';
             transition: opacity .2s ease;
          }
-         &-block{
+
+         &-block {
             position: absolute;
             top: 0;
             left: 0;
@@ -82,9 +102,9 @@
             z-index: 2;
             transition: opacity .2s ease;
          }
-         
-         &-img{
-            a{
+
+         &-img {
+            a {
                width: 100px;
                height: 100px;
                background-color: red;
@@ -96,6 +116,7 @@
                top: 50%;
                left: 50%;
                transform: translate(-50%, -50%);
+
                @media screen and (max-width: 992px) {
                   width: 50px;
                   height: 50px;
@@ -103,8 +124,9 @@
             }
 
          }
-         &-text{
-            p{
+
+         &-text {
+            p {
                max-width: 270px;
                font-family: 'Poppins';
                font-style: normal;
@@ -116,6 +138,7 @@
                position: absolute;
                left: 30px;
                bottom: 25px;
+
                @media screen and (max-width: 992px) {
                   font-size: 10px;
                }
@@ -125,10 +148,12 @@
 
       &_title {
          margin-top: 21px;
+
          @media screen and (max-width: 992px) {
             text-align: center;
          }
-         :hover{
+
+         :hover {
             color: red;
             transition: 1.5s;
          }
@@ -142,13 +167,14 @@
             letter-spacing: 0.23em;
             color: #000000;
             text-decoration: none;
+
             @media screen and (max-width: 992px) {
                letter-spacing: normal;
             }
          }
 
       }
-      
+
    }
 
 

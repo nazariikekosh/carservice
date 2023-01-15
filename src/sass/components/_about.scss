@@ -14,6 +14,10 @@
          color: #FFFFFF;
          @media screen and (max-width:1200px) {
             font-size: 28px;
+            text-align: center;
+         }
+         @media screen and(max-width: 767px) {
+            margin-top: 60px;
          }
       }
    }
@@ -27,10 +31,17 @@
          line-height: 1.5;
          letter-spacing: 0.23em;
          color: #B7B7B7;
+         @media screen and (max-width:1200px) {
+            font-size: 13px;
+            text-align: center;
+         }
       }
    }
    &__link{
       margin-bottom: 118px;
+      @media screen and(max-width: 991px) {
+         margin-bottom: 60px;
+      }
       :hover{
          color: red;
          text-decoration: none;
@@ -43,7 +54,10 @@
          font-size: 18px;
          line-height: 1.5;
          text-transform: uppercase;
-         color: #FFFFFF;
+         color: #FFFFFF;  
+      }
+      @media screen and (max-width:1200px) {
+         font-size: 13px;
       }
    }
    &__image{
@@ -54,7 +68,13 @@
          }
          @media screen and (max-width: 991px) {
             margin-bottom: 90px;
+            max-height: 250px;
          }
+         @media screen and (max-width: 991px) {
+            margin-bottom: 60px;
+            max-height: 200px;
+         }
+
       }
    }
 
