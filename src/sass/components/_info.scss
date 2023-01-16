@@ -4,7 +4,7 @@
    z-index: 1;
    margin-top: -90px;
    margin-bottom: 90px;
-   
+
 
 
    &__column {
@@ -37,6 +37,12 @@
             @media screen and (max-width: 920px) {
                padding: 39px 0 0 0;
             }
+            img{
+               @media screen and(max-width: 500px) {
+                  max-width: 20px;
+               }
+            }
+
          }
 
          .info__item_title {

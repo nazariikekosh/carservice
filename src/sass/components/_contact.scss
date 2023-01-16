@@ -29,6 +29,9 @@
 
             background-color: red;
          }
+         @media screen and(max-width: 500px) {
+            padding: 6px 30px;
+         }
       }
       max-width: 440px;
       &_row{
