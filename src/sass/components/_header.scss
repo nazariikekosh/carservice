@@ -9,8 +9,37 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       @media screen and (max-width: 830px) {
          justify-content: space-around;
+      }
+
+      .header__burger-btn {
+         display: none;
+         position: relative;
+         width: 30px;
+         height: 30px;
+         border: none;
+         background-color: red;
+         z-index: 2;
+         @media screen and(max-width:765px) {
+            display: block;
+         }
+      }
+
+      .header__burger-btn span {
+         position: absolute;
+         width: 30px;
+         height: 3px;
+         background-color: rgb(253, 251, 251);
+         left: 5px;
+      }
+
+      .header__burger-btn span:nth-child(1){
+         transform: translateY(-10px);
+      }
+      .header__burger-btn span:nth-child(3){
+         transform: translateY(10px);
       }
 
       .header__logo {
@@ -32,40 +61,54 @@
       }
 
       .header__nav {
-         ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            justify-content: center;
-
-            :last-child {
-               margin-right: 0;
-            }
-
-            li {
-               list-style: none;
-               margin-right: 35px;
-
-
-               :hover {
-                  color: red;
-                  text-shadow: 0 0 3px #979696, 0 0 5px #0f0f0f;
-                  transition: 1.5s;
+         nav {
+            ul {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               justify-content: center;
+               @media screen and (max-width: 765px){
+                  display: block;
                }
 
-               a {
-                  white-space: nowrap;
-                  text-decoration: none;
-                  color: #FFFFFF;
-                  font-family: 'Poppins';
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 15px;
+               :last-child {
+                  margin-right: 0;
                }
-            }
 
-            @media screen and (max-width: 765px) {
-               display: none;
+               li {
+                  list-style: none;
+                  margin-right: 35px;
+                  @media screen and (max-width: 765px){
+                     display: block;
+                     font-size: 21px;
+                     padding: 10px 0;
+                  }
+
+
+                  :hover {
+                     color: red;
+                     text-shadow: 0 0 3px #979696, 0 0 5px #0f0f0f;
+                     transition: 1.5s;
+                  }
+
+                  a {
+                     white-space: nowrap;
+                     text-decoration: none;
+                     color: #FFFFFF;
+                     font-family: 'Poppins';
+                     font-style: normal;
+                     font-weight: 600;
+                     font-size: 15px;
+                  }
+               }
+
+               @media screen and (max-width: 765px) {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  background-color: red;
+                  padding: 100px 20px 20px 20px;
+               }
             }
          }
       }
