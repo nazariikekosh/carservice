@@ -49,7 +49,46 @@
       top: 0;
       transform: rotate(-45deg);
    }
-   
+   .burger-menu__nav{
+      padding-top: 80px;
+      position: fixed;
+      z-index: 20;
+      display: flex;
+      flex-flow: column;
+      height: 100vh;
+      background-color: rgb(32, 32, 32);
+      overflow-y: auto;
+      left: -100%;
+   }
+   .burger-menu_active .burger-menu__nav{
+      left: 0;
+   }
+   .burger-menu__link{
+      padding: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: white;
+      :hover{
+         filter: brightness(0.7);
+      }
+   }
+   .burger-menu__overlay{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+   }
+   .burger-menu_active .burger-menu__overlay{
+      display: block;
+   } 
+
+
 
    &__header {
       display: flex;
