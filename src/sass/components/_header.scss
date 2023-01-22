@@ -58,6 +58,7 @@
       height: 100vh;
       background-color: rgb(32, 32, 32);
       left: -100%;
+      transition: 0.5s;
    }
    .burger-menu_active .burger-menu__nav{
       left: 0;
