@@ -38,7 +38,7 @@
                justify-content: center;
                justify-content: center;
 
-               @media screen and (max-width: 767px) {
+               @media screen and (max-width: 765px) {
                   display: none;
 
                }
@@ -107,115 +107,5 @@
          }
       }
 
-      &__mobile_menu {
-         float: left;
-         height: 25px;
-         width: 40px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         align-items: center;
-         cursor: pointer;
-      }
-
-      .menulogo {
-         height: 3px;
-         width: 30px;
-         background-color: white;
-      }
-
-      .menu {
-         background-color: red;
-         width: 50%;
-         height: 100vh;
-         padding: 50px;
-
-         li {
-            list-style-type: none;
-            border-bottom: 1px solid white;
-            padding: 30px 0;
-            text-align: center;
-
-            a {
-               color: black;
-               text-decoration: none;
-               font-size: 20px;
-               white-space: nowrap;
-
-            }
-         }
-      }
-
-      .mobile__icon {
-         display: none;
-         width: 30px;
-         height: 30px;
-         position: relative;
-         z-index: 5;
-         overflow: hidden;
-
-         @media screen and(max-width:767px) {
-            display: block;
-         }
-      }
-
-      .mobile__icon span {
-         width: 30px;
-         height: 2px;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         background-color: $var1;
-         transition: all 0.5s;
-      }
-
-      .mobile__icon span:nth-of-type(2) {
-         top: calc(50% - 5px);
-      }
-
-      .mobile__icon span:nth-of-type(3) {
-         top: calc(50% + 5px);
-      }
-
-      .mobile__menu {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         padding: 15px;
-         background: rgb(245, 246, 237);
-         background: linear-gradient(90deg, rgba(245, 246, 237, 1) 0%, rgba(219, 216, 216, 1) 46%, rgba(136, 132, 132, 1) 100%);
-         transform: translateX(100%);
-         transition: transform 0.5s;
-
-         .hamb_nav {
-            margin-top: 60px;
-
-            ul {
-               li {
-                  padding-bottom: 20px;
-
-                  a {
-                     font-size: 24px;
-                     font-weight: 700;
-                     color: $var1;
-                     text-decoration: none;
-                  }
-               }
-            }
-
-         }
-
-
-
-      }
    }
-
-}
-
-
-.mobile__menu.active {
-   transform: translateX(0);
 }
