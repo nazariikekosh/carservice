@@ -33,6 +33,13 @@
          .info__item_img {
             padding-left: 39px;
             padding-top: 39px;
+            
+            a{
+               :hover{
+                  transform: rotate(20deg);
+                  transition: 0.4s;
+               }
+            }
 
             @media screen and (max-width: 920px) {
                padding: 39px 0 0 0;
@@ -49,14 +56,23 @@
             padding-left: 39px;
             padding-right: 10px;
             padding-top: 21px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.5;
-            letter-spacing: 0.15em;
-            white-space: nowrap;
-            color: #000000;
+            a{
+               text-decoration: none;
+               font-family: 'Poppins';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 1.5;
+               letter-spacing: 0.15em;
+               white-space: nowrap;
+               color: #000000;
+
+               
+               :hover{
+                  color: red;
+                  transition: 0.4s;
+               }
+            }
 
             @media screen and (max-width:1200px) {
                font-size: 16px;
