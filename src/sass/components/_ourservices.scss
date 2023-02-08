@@ -17,6 +17,9 @@
             display: flex;
             justify-content: center;
          }
+         @media screen and (max-width: 480px) {
+            font-size: 22px;
+         }
       }
    }
 
@@ -39,7 +42,7 @@
          font-family: 'Poppins';
          font-style: normal;
          font-weight: 400;
-         font-size: 15px;
+         font-size: 14px;
          line-height: 1.2px;
          letter-spacing: 0.15em;
          color: #000000;

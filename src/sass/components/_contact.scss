@@ -11,6 +11,9 @@
          line-height: 1.5;
          letter-spacing: 0.15em;
          color: #FFFFFF;
+         @media screen and (max-width: 480px) {
+            font-size: 28px;
+         }
       }
       
    }
