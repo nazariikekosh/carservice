@@ -63,12 +63,14 @@
                font-weight: 700;
                font-size: 18px;
                line-height: 1.5;
+               text-transform: uppercase;
                letter-spacing: 0.15em;
                white-space: nowrap;
                color: #000000;
                @media screen and (max-width: 480px){
                   font-size: 15px;
                   letter-spacing: 0;
+                  text-transform: none;
                }
 
                
