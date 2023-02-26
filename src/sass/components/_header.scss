@@ -32,11 +32,11 @@
    }
    .burger-menu__lines::after {
       content: '';
-      top: 12px;
+      top: 8px;
    }
    .burger-menu__lines::before {
       content: '';
-      top: -12px;
+      top: -8px;
    }
    .burger-menu_active .burger-menu__lines{
       background-color: transparent;
@@ -57,11 +57,11 @@
       flex-flow: column;
       height: 100vh;
       background-color: rgb(32, 32, 32);
-      left: -100%;
+      top: -100%;
       transition: 0.5s;
    }
    .burger-menu_active .burger-menu__nav{
-      left: 0;
+      top: 0;
    }
    .burger-menu__link{
       padding: 20px;
